@@ -1,0 +1,28 @@
+{
+  "name": "javascript-sorts",
+  "version": "1.0.0",
+  "description": "A few sorting algorithms implemented in JS.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/HiroAgustin/javascript-sorts.git"
+  },
+  "scripts": {
+    "test": "nyc ava",
+    "coverage": "nyc report --reporter=text-lcov | coveralls"
+  },
+  "author": {
+    "name": "Agustín Díaz",
+    "email": "me@adiaz.uy",
+    "url": "adiaz.uy"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "ava": "^0.15.1",
+    "coveralls": "^2.11.9",
+    "nyc": "^6.4.4"
+  },
+  "engines": {
+    "node": "^6.2.0"
+  },
+  "dependencies": {}
+}
