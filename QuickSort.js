@@ -10,10 +10,13 @@ const SWAP_MEDIAN_PIVOT = function SWAP_MEDIAN_PIVOT(list, start, end)
 
   if (middle < first && middle > last)
     SWAP(list, start, middleIndex);
+
   else if (middle < last && middle > first)
     SWAP(list, start, middleIndex);
+
   else if (last < first && last > middle)
     SWAP(list, start, end - 1);
+
   else if (last < middle && last > first)
     SWAP(list, start, end - 1);
 };
