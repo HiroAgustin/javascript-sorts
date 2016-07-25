@@ -1,13 +1,13 @@
 'use strict';
 
-const SWAP = function SWAP(list, i, j)
+const SWAP = function SWAP(list = [], i = 0, j = list.length)
 {
   let aux = list[i];
   list[i] = list[j];
   list[j] = aux;
 };
 
-const SWAP_MEDIAN_PIVOT = function SWAP_MEDIAN_PIVOT(list, start, end)
+const SWAP_MEDIAN_PIVOT = function SWAP_MEDIAN_PIVOT(list = [], start = 0, end = list.length)
 {
   let first = list[start]
     , last = list[end - 1]
