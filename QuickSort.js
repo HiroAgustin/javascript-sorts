@@ -1,5 +1,12 @@
 'use strict';
 
+const SWAP = function SWAP(list, i, j)
+{
+  let aux = list[i];
+  list[i] = list[j];
+  list[j] = aux;
+};
+
 const SWAP_MEDIAN_PIVOT = function SWAP_MEDIAN_PIVOT(list, start, end)
 {
   let first = list[start]
@@ -19,13 +26,6 @@ const SWAP_MEDIAN_PIVOT = function SWAP_MEDIAN_PIVOT(list, start, end)
 
   else if (last < middle && last > first)
     SWAP(list, start, end - 1);
-};
-
-const SWAP = function SWAP(list, i, j)
-{
-  let aux = list[i];
-  list[i] = list[j];
-  list[j] = aux;
 };
 
 const QUICK_SORT = function QUICK_SORT(type, list = [], start = 0, end = list.length)
