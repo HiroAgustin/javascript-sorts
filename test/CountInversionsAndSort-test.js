@@ -57,7 +57,7 @@ test('Complex Cases', (t) =>
   });
 });
 
-test.cb('Excersise', (t) =>
+test.skip.cb('Excersise', (t) =>
 {
   let list = [];
 
