@@ -33,5 +33,7 @@ test('Base Cases Median', (t) =>
   t.deepEqual(quickSort('median', [1, 2, 3]), [1, 2, 3]);
   t.deepEqual(quickSort('median', [3, 2, 1]), [1, 2, 3]);
   t.deepEqual(quickSort('median', [2, 3, 1]), [1, 2, 3]);
+  t.deepEqual(quickSort('median', [5, 2, 4, 1, 3]), [1, 2, 3, 4, 5]);
+  t.deepEqual(quickSort('median', [5, 4, 1, 3, 2]), [1, 2, 3, 4, 5]);
   t.deepEqual(quickSort('median', [3, 9, 8, 4, 6, 10, 2, 5, 7, 1]), [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
 });
